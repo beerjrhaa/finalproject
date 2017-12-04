@@ -2,56 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c19e24b9-b499-4f41-94bc-3944157858a2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/images/picture/albumpav/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/images/picture/albumpav/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/images/picture/albumpav/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/images/picture/albumpav/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/images/picture/albumpav/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/images/picture/albumpav/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/images/picture/albumpav/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/images/picture/albumpav/16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/images/picture/albumpav/17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/images/picture/albumpav/18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/images/picture/albumpav/19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/images/picture/albumpav/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/images/picture/albumpav/20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/images/picture/albumpav/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/images/picture/albumpav/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/images/picture/albumpav/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/images/picture/albumpav/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/images/picture/albumpav/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/images/picture/albumpav/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/images/picture/albumpav/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/CSS/magnific-popup.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/admin_cf_index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/admin_cf_menu.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/admin_content.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/admin_index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/admin_mainmenu.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/admin_menu.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/cf_content_admin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/cf_showroomAll.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/cf_status.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/cfe_menu.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/cfe_showcontent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/cfe_showequipdetail.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/cfm_menu.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/cfm_showcontent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/cfm_showmonkdetail.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/check_login.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/jquery/jquery.magnific-popup.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/login.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ver2/pav/zpo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver1/admin/reportpav.php" afterPath="$PROJECT_DIR$/ver1/admin/reportpav.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver2/cf_index.php" afterPath="$PROJECT_DIR$/ver2/cf_index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver2/cf_showdetailpav.php" afterPath="$PROJECT_DIR$/ver2/cf_showdetailpav.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver2/cfe_content.php" afterPath="$PROJECT_DIR$/ver2/cfe_content.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver2/cfe_index.php" afterPath="$PROJECT_DIR$/ver2/cfe_index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver2/cfm_content.php" afterPath="$PROJECT_DIR$/ver2/cfm_content.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver2/cfm_index.php" afterPath="$PROJECT_DIR$/ver2/cfm_index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver2/database/db_tools.php" afterPath="$PROJECT_DIR$/ver2/database/db_tools.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver2/inc_js.php" afterPath="$PROJECT_DIR$/ver2/inc_js.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ver2/menu_main.php" afterPath="$PROJECT_DIR$/ver2/menu_main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -84,19 +37,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zpo.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="zpo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ver2/pav/zpo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="240">
+              <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
               <folding>
                 <marker date="1512326605474" expanded="true" signature="280:353" ph="SELECT * FRO... invipav_tb" />
                 <marker date="1512326605474" expanded="true" signature="491:513" ph="..." />
+                <marker date="1512326605474" expanded="true" signature="1477:1723" ph="..." />
+                <marker date="1512326605474" expanded="true" signature="1503:1709" ph="..." />
+                <marker date="1512326605474" expanded="false" signature="1546:1558" ph="..." />
+                <marker date="1512326605474" expanded="false" signature="1624:1643" ph="..." />
+                <marker date="1512326605474" expanded="true" signature="1754:1996" ph="..." />
+                <marker date="1512326605474" expanded="true" signature="1780:1982" ph="..." />
+                <marker date="1512326605474" expanded="false" signature="1823:1833" ph="..." />
+                <marker date="1512326605474" expanded="false" signature="1898:1917" ph="..." />
                 <marker date="1512326605474" expanded="true" signature="2099:2231" ph="..." />
                 <marker date="1512326605474" expanded="true" signature="2099:2245" ph="..." />
                 <marker date="1512326605474" expanded="true" signature="2099:2346" ph="..." />
                 <marker date="1512326605474" expanded="false" signature="2148:2167" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -137,10 +108,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="827" />
+    <option name="height" value="825" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -158,7 +129,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,28 +137,18 @@
               <item name="finalproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="finalproject" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="finalproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="finalproject" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ver2" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="finalproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="finalproject" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ver2" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pav" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="SearchEverywhereHistoryKey" value="cf_content_admin&#9;FILE&#9;file:///Applications/MAMP/htdocs/finalproject/ver2/cf_content_admin.php&#10;admin_cf_index&#9;FILE&#9;file:///Applications/MAMP/htdocs/finalproject/ver2/admin_cf_index.php" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -218,15 +179,16 @@
       <workItem from="1512224601733" duration="1718000" />
       <workItem from="1512237902431" duration="1597000" />
       <workItem from="1512325248620" duration="552000" />
-      <workItem from="1512387514556" duration="6000" />
+      <workItem from="1512387514556" duration="107000" />
+      <workItem from="1512387656164" duration="44000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6183000" />
+    <option name="totallyTimeSpent" value="6328000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="825" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="825" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18472221" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -279,11 +241,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ver2/pav/zpo.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding>
+            <marker date="1512326605474" expanded="true" signature="280:353" ph="SELECT * FRO... invipav_tb" />
+            <marker date="1512326605474" expanded="true" signature="491:513" ph="..." />
+            <marker date="1512326605474" expanded="true" signature="1477:1723" ph="..." />
+            <marker date="1512326605474" expanded="true" signature="1503:1709" ph="..." />
+            <marker date="1512326605474" expanded="false" signature="1546:1558" ph="..." />
+            <marker date="1512326605474" expanded="false" signature="1624:1643" ph="..." />
+            <marker date="1512326605474" expanded="true" signature="1754:1996" ph="..." />
+            <marker date="1512326605474" expanded="true" signature="1780:1982" ph="..." />
+            <marker date="1512326605474" expanded="false" signature="1823:1833" ph="..." />
+            <marker date="1512326605474" expanded="false" signature="1898:1917" ph="..." />
+            <marker date="1512326605474" expanded="true" signature="2099:2231" ph="..." />
+            <marker date="1512326605474" expanded="true" signature="2099:2245" ph="..." />
+            <marker date="1512326605474" expanded="true" signature="2099:2346" ph="..." />
+            <marker date="1512326605474" expanded="false" signature="2148:2167" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ver2/cfe_insertday.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <marker date="1512234702690" expanded="true" signature="234:343" ph="INSERT INTO `inviequip_tb`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ver2/cf_showroomAll.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ver2/pav/zpo.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding>
             <marker date="1512326605474" expanded="true" signature="280:353" ph="SELECT * FRO... invipav_tb" />
             <marker date="1512326605474" expanded="true" signature="491:513" ph="..." />
+            <marker date="1512326605474" expanded="true" signature="1477:1723" ph="..." />
+            <marker date="1512326605474" expanded="true" signature="1503:1709" ph="..." />
+            <marker date="1512326605474" expanded="false" signature="1546:1558" ph="..." />
+            <marker date="1512326605474" expanded="false" signature="1624:1643" ph="..." />
+            <marker date="1512326605474" expanded="true" signature="1754:1996" ph="..." />
+            <marker date="1512326605474" expanded="true" signature="1780:1982" ph="..." />
+            <marker date="1512326605474" expanded="false" signature="1823:1833" ph="..." />
+            <marker date="1512326605474" expanded="false" signature="1898:1917" ph="..." />
             <marker date="1512326605474" expanded="true" signature="2099:2231" ph="..." />
             <marker date="1512326605474" expanded="true" signature="2099:2245" ph="..." />
             <marker date="1512326605474" expanded="true" signature="2099:2346" ph="..." />
@@ -367,7 +378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="79" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -375,7 +385,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="51" lean-forward="false" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -389,16 +398,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ver2/pav/zpo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="240">
+          <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
           <folding>
             <marker date="1512326605474" expanded="true" signature="280:353" ph="SELECT * FRO... invipav_tb" />
             <marker date="1512326605474" expanded="true" signature="491:513" ph="..." />
+            <marker date="1512326605474" expanded="true" signature="1477:1723" ph="..." />
+            <marker date="1512326605474" expanded="true" signature="1503:1709" ph="..." />
+            <marker date="1512326605474" expanded="false" signature="1546:1558" ph="..." />
+            <marker date="1512326605474" expanded="false" signature="1624:1643" ph="..." />
+            <marker date="1512326605474" expanded="true" signature="1754:1996" ph="..." />
+            <marker date="1512326605474" expanded="true" signature="1780:1982" ph="..." />
+            <marker date="1512326605474" expanded="false" signature="1823:1833" ph="..." />
+            <marker date="1512326605474" expanded="false" signature="1898:1917" ph="..." />
             <marker date="1512326605474" expanded="true" signature="2099:2231" ph="..." />
             <marker date="1512326605474" expanded="true" signature="2099:2245" ph="..." />
             <marker date="1512326605474" expanded="true" signature="2099:2346" ph="..." />
             <marker date="1512326605474" expanded="false" signature="2148:2167" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
