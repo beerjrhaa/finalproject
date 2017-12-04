@@ -16,13 +16,8 @@
               include_once 'connect.php';
               include_once 'form/main_form.php';
               include_once 'form/gridview.php';
-             ?>
+              include_once 'database/database.php';             ?>
 	</head>
-	<script type="text/javascript">
- $("#myCarousel").carousel({
-     interval: 2000;
- });
-</script>
 <body>
 	<div class="warpper">
         <div class="container">
@@ -30,7 +25,7 @@
                 <img class='w-100' src="images/calendarheader.jpg">
 	        </div>
 			<div class='col-md-12'>
-				<?php include_once 'cf_menu.php';?>
+				<?php include_once 'cfe_menu.php';?>
 			</div> <!--END-MENU-->
 			<div class='col-md-12'>
 				<?php include_once 'cfe_content.php';?>

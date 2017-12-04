@@ -31,7 +31,7 @@
                 <img class='w-100' src="images/calendarheader.jpg">
 	        </div>
 			<div class='col-md-12'>
-				<?php include_once 'cf_menu.php';?>
+				<?php include_once 'cfm_menu.php';?>
 			</div> <!--END-MENU-->
 			<div class='col-md-12'>
 				<?php include_once 'cfm_content.php';?>

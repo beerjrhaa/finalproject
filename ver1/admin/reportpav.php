@@ -1,7 +1,7 @@
 <?php
 	        ob_start();
-        include '../database/database.php';
-        include '../mpdf/mpdf.php';
+        include 'database/database.php';
+        include 'mpdf/mpdf.php';
 
 
 ?>
@@ -84,7 +84,7 @@
             //$mpdf=new mPDF('utf-8', 'A4-L');
             // Define a page size/format by array - page will be 190mm wide x 236mm height
             //$mpdf=new mPDF('utf-8', array(190,236));
-            $stylesheet = file_get_contents('css/printpdf.css');
+            $stylesheet = file_get_contents('../../ver2/CSS/printpdf.css');
             //$mpdf->SetDisplayMode('fullpage');
             $mpdf->WriteHTML($stylesheet,1);
             $mpdf->WriteHTML($html,2);

@@ -4,12 +4,12 @@
 		var $host = 'localhost';
 		var $user = 'root';
 		var $pass = 'root';//เปลี่ยน
-		var $db_name = 'finalproject_db';
+		var $db_name = 'intranet';
 		var $sql;
 		//คำสั่งเพื่อเชื่อมต่อฐานข้อมูลโดยเลือกเทเบิ้ล
 		function connect(){
             @$con = mysqli_connect($this->host,$this->user,$this->pass,$this->db_name);
-
+            
 			if(!empty($con)){
 			   mysqli_set_charset($con,'utf8');
 			}else{
@@ -33,7 +33,7 @@
 			foreach($data as $k => $v){
 				$field.=$k;
 				$val .="'$v'";
-
+				
 				if($i<count($data)-1){
 					$field.=',';
 					$val.=',';
@@ -43,13 +43,13 @@
 			$this->sql = "INSERT INTO $table($field) VALUES($val)";
 			return mysqli_query($con,$this->sql);
 		}
-
+		
 		function delete($table,$field,$value){
     		$con = $this->connect();
 			$this->sql = "DELETE FROM $table WHERE $field = $value";
 			return mysqli_query($con,$this->sql);
 		}
-
+		
 		function update($table, $data, $field, $value){
     		$con = $this->connect();
 			$rows ="";
@@ -66,13 +66,13 @@
 			$this->sql = "UPDATE $table SET $rows WHERE $field = $value";
 			return mysqli_query($con,$this->sql);
 		}
-
+		
 		function updateStatus($table, $change, $field, $value){
-		    $con = $this->connect();
+		    $con = $this->connect();	
 			$this->sql = "UPDATE $table SET $change WHERE $field = $value";
 			return mysqli_query($con,$this->sql);
 		}
-
+		
 		function orderDESC($table,$value){
     		$this->sql = "SELECT * FROM $table ORDER BY $value DESC";
     		return $this;
@@ -120,20 +120,20 @@
 			$this->sql = "SELECT * FROM $table WHERE $condition";
 			return $this;
 		}
-
-
+		
+		
 		function specifytable($tablemain,$table,$condition){
 			$this->sql = "SELECT $tablemain FROM $table WHERE $condition";
 			return $this;
 		}
-
+		
 		function in($table,$field,$value){
 			$_value ="";
 			$count = 0;
-
+			
 			foreach($value as $v){
 			$_value.="$v";
-
+			
 			//add comma
 			if(count($value)!=$count +1){
 				$_value.=",";
@@ -167,7 +167,7 @@
 			}
 			return null;
 		}
-
+		
 		function findAllDESC($table,$order){
 			$con = $this->connect();
 			if(!empty($con)){
@@ -192,7 +192,18 @@
 			$this->sql = "SELECT * FROM $table WHERE $column1 = $value1 && $column2 = $value2";
 			return $this;
 		}
-
+		function findByPK32($table,$table2,$table3,$column1,$value1,$column2,$value2){
+			$this->sql = "SELECT * FROM $table,$table2,$table3 WHERE $column1 = $value1 && $column2 = $value2";
+			return $this;
+		}
+        function findByPK33($table1,$table2,$table3,$column1,$value1,$column2,$value2,$column3,$value3){
+			$this->sql = "SELECT * FROM $table1,$table2,$table3 WHERE $column1 = $value1 && $column2 = $value2 && $column3 = $value3";
+			return $this;
+		}
+		 function findByPK34($table1,$table2,$table3,$column1,$value1,$column2,$value2,$column3,$value3,$column4,$value4){
+			$this->sql = "SELECT * FROM $table1,$table2,$table3 WHERE $column1 = $value1 && $column2 = $value2 && $column3 = $value3 && $column4 = $value4";
+			return $this;
+		}
 		function findByPK43($table1,$table2,$table3,$table4,$column1,$value1,$column2,$value2,$column3,$value3,$column4,$value4){
 			$this->sql = "SELECT * FROM $table1,$table2,$table3,$table4 WHERE $column1 = $value1 && $column2 = $value2 && $column3 = $value3";
 			return $this;
@@ -222,10 +233,6 @@
     		return $this;
 		}
 
-		function findByPK32($table,$table2,$table3,$column1,$value1,$column2,$value2){
-    		$this->sql = "SELECT * FROM $table,$table2,$table3 WHERE $column1 = $value1 AND $column2 = $value2";
-    		return $this;
-		}
 		function findByPK3Limit2($table,$table2,$table3,$column1,$value1,$column2,$value2,$column3,$value3,$start,$per_page){
     		$this->sql = "SELECT * FROM $table,$table2,$table3 WHERE $column1 = $value1 AND $column2 = $value2 AND $column3 = $value3 LIMIT  $start, $per_page";
     		return $this;
@@ -283,12 +290,17 @@
             $this->sql = "select count(*) from $table,$table2,$table3,$table4 where $column1 = $value1 AND $column2 = $value2 AND $column3 $value3 AND $column4 = $value4 AND $column5 = $value5 AND $column6 = $value6 AND $column7 = $value7" ;
             return $this;
 		}
+// 		ใช้เฉพาะส่วน CS_totalservicemonthzoo
+		function countTableBETWEENOR47($table,$table2,$table3,$table4,$column1,$value1,$column2,$value2,$column3,$value3,$column4,$value4,$column5,$value5,$column6,$value6,$column7,$value7){
+            $this->sql = "select count(*) from $table,$table2,$table3,$table4 where $column1 = $value1 AND $column2 = $value2 AND $column3 $value3 AND ($column4 = $value4 OR $column5 = $value5) AND $column6 = $value6 AND $column7 = $value7" ;
+            return $this;
+		}
 
 
 		function findByAttributes($table,$attributes){
 				$this->sql = "SELECT * FROM $table WHERE";
 				$count = 0;
-
+				
 				foreach($attributes as $k => $v){
 					if($count == 0){
 						$this->sql.= " $k '$v'";

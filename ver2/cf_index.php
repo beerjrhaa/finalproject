@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="CSS/jquery.datetimepicker.css">
         <link rel="stylesheet" href="CSS/fullcalendar.print.min.css" media="print">
         <link rel="stylesheet" href="CSS/print.css" media="print">
+        <link rel="stylesheet" href="CSS/magnific-popup.css">
 		<?php include_once 'inc_js.php';
     		  include_once 'database/db_tools.php';
               include_once 'connect.php';
@@ -19,11 +20,6 @@
               include_once 'database/database.php';
              ?>
 	</head>
-	<script type="text/javascript">
- $("#myCarousel").carousel({
-     interval: 2000;
- });
-</script>
 <body>
 	<div class="warpper">
         <div class="container">
