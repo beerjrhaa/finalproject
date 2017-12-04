@@ -2,7 +2,7 @@
 <?
 	$pav_id = $_GET['pav_id'];
 		$sql = "SELECT * FROM pav_tb WHERE pav_id =$pav_id";
-		$stmt=$db->prepare($sql);
+		$stmt=$db2->prepare($sql);
 		$stmt->execute();
 		$rows = $stmt->rowCount();
 		$pav=$stmt->fetch();

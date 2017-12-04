@@ -18,12 +18,6 @@
                             <a class="dropdown-item" href="admin_index.php?url=admin_cf_index.php&url2=cf_showinvi_pav.php&pav_id=10">ศาลาดวงแก้ว</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">เพิ่มข้อมูล</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="admin_index.php?url=admin_cf_index.php&url2=cf_addconfer.php">เพิ่มห้องประชุม</a>
-                    </div>
-                </li>
         </ul>
       </div>
       </nav>

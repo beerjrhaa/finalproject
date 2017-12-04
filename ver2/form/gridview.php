@@ -2,8 +2,9 @@
 include_once 'change2thaidate.php';
 class gridView{
 	public $name,$data,$delete,$edit,$view,$deletetxt,$edittxt,$printtxt,$viewtxt,$header,$width,$pr,$change,$changestatus,$sts,$span,$link,$special,$system;
-	
-	
+	private $key_id;
+
+
 	function __construct(){
 		$this->deletetxt = 'ลบ';
 		//$this->edittxt = 'อนุมัติ';
@@ -12,20 +13,25 @@ class gridView{
 		$this->header = array();
 		$this->footer = array();
 		$this->width = array();
+		$this->key_id = 'id';
 	}
-	
+
+	function setKeyId($val) {
+		$this->key_id = $val;
+	}
+
 	function __toString(){
 		$html = "";
 		$header = "";
 		$footer = "";
 		$body = "";
-		
+
 /* ส่วนหัวข้อ */
 		$size = count($this->header);
 		for($i = 0; $i<$size; $i++){
 			$headertxt = $this->header[$i];
 			$headerwidth = $this->width[$i];
-			
+
 			$header.= "<td width='{$headerwidth}'>{$headertxt}</td>";
 		}
 /* ส่วนสรุป */
@@ -33,7 +39,7 @@ class gridView{
 		for($i = 0; $i<$size; $i++){
 			$footertxt = $this->footer[$i];
 			$footerwidth = $this->footer[$i];
-			
+
 			$footer.= "<td width='{$footerwidth}'>{$footertxt}</td>";
 		}
 /* ส่วนของข้อมูล */
@@ -41,7 +47,7 @@ class gridView{
 		for($i=0; $i<$size; $i++){
 			$row = $this->data[$i];
 			$columncount = count($row);
-			
+
 			$body.="<tr>";
 			for($j=0; $j<$columncount;$j++){
 				$columntxt = $row[$j];
@@ -49,7 +55,7 @@ class gridView{
 			}
 			$body.="</tr>";
 		}
- 
+
 /* รูปแบบ */
 		$html = "
 		<table id='{$this->name}' border='0' style='border=collapse: collapse;'>
@@ -76,7 +82,7 @@ class gridView{
 		for($i=0; $i<$size;$i++){
 			$headertxt = $this->header[$i];
 			$headerwidth = $this->width[$i];
-			
+
 			$header.="<td width='{$headerwidth}'>{$headertxt}</td>";
 		}
 /* ส่วนสรุป */
@@ -84,16 +90,16 @@ class gridView{
 		for($i = 0; $i<$size; $i++){
 			$footertxt = $this->footer[$i];
 			$footerwidth = $this->footer[$i];
-			
+
 			$footer.= "<td width='{$footerwidth}'>{$footertxt}</td>";
 		}
 		$columncount = count($fields);
 			while(@$r = mysqli_fetch_array($result,MYSQLI_ASSOC)){
-    			
+
     			@$id = $r[$this->pr];
-    			
-				$body.="<tr data-href=".$this->link."&id=".$id.">";
-				
+
+				$body.="<tr data-href=".$this->link."&".$this->key_id."=".$id.">";
+
 				for($i =0; $i<$columncount; $i++){
     				//ส่วนนี้อาจกระทบทั้งระบบ
     				$body.="<td><center>";
@@ -101,24 +107,24 @@ class gridView{
     				if('touristreport'== $this->system){
      				   if($i >=1 && $students <=12){
                          $fieldIndex = $fields[$i];
-                         $columntxt = $r[$fieldIndex];   
-                         $body.= number_format($columntxt); 
+                         $columntxt = $r[$fieldIndex];
+                         $body.= number_format($columntxt);
      				   }
                        else{
                             $fieldIndex = $fields[$i];
                             $columntxt = $r[$fieldIndex];
-                            $eng_date=strtotime($columntxt);  
+                            $eng_date=strtotime($columntxt);
                             $thai_date = thai_date($eng_date);
                             $body.= $thai_date;
 					   }
 				    }
-				    
+
 				    //ส่วนหน้าหลัก
 				    if('touristreportmain'== $this->system){
      				   if($i >=1 && @$students <=12){
                          $fieldIndex = $fields[$i];
-                         $columntxt = $r[$fieldIndex];   
-                         $body.= number_format($columntxt); 
+                         $columntxt = $r[$fieldIndex];
+                         $body.= number_format($columntxt);
      				   }
                        else{
                             $fieldIndex = $fields[$i];
@@ -131,13 +137,13 @@ class gridView{
                             $columntxt = $r[$fieldIndex];
                             $body.= $columntxt;
 				    }
-				    
+
 				    $body.="</center></td>";
 				}
                 @$id = $r[$this->pr];
-                @$status = $r[$this->sts];	
+                @$status = $r[$this->sts];
 			/* ส่วนตรวจสอบค่า */
-            @$con = mysqli_connect("localhost","root","rootroot","intranet"); 
+            @$con = mysqli_connect("localhost","root","rootroot","intranet");
 			@$sql = "SELECT * FROM problem WHERE problem_id = $id"; //ไว้แก้ เปลี่ยนสเตตัส
 			@$sqlplan = "SELECT * FROM plan WHERE plan_id = $id"; //ไว้แก้ เปลี่ยนสเตตัส
 			@$query= mysqli_query($con,$sql);
@@ -178,7 +184,7 @@ class gridView{
 				$this->span ='glyphicon glyphicon-info-sign';
 				$this->changetxt = '&nbsp;ไม่ใช้งาน';
 			}
-			
+
 
 			if($this->view !=""){
 				$body .="
@@ -189,27 +195,27 @@ class gridView{
 			if($this->delete !=""){
 				$body.="
 					<td>
-						<a href='{$this->delete}?id={$id}' class='btn btn-danger deletebox' OnClick='return chkdel();' >{$this->deletetxt}</a>
+						<a href='{$this->delete}&".$this->key_id."={$id}' class='btn btn-danger deletebox' OnClick='return chkdel();' >{$this->deletetxt}</a>
 					</td>";
 			}
 /* 				add edit */
 			if($this->edit !=""){
-    			
+
 				$body .="
 				<td>
-					<a href='{$this->edit}&id={$id}'class='btn btn-warning editbox'><div class='edittext'>{$this->edittxt}</div></a>
+					<a href='{$this->edit}&".$this->key_id."={$id}'class='btn btn-warning editbox'><div class='edittext'>{$this->edittxt}</div></a>
 				</td>";
 			}
 			if($this->change !=""){
-    			
+
 				$body .="
 				<td>
-					<a href='{$this->change}?id={$id}&&status={$status}'class='{$this->changestatus}'><span class='{$this->span}'></span>{$this->changetxt}</a>
+					<a href='{$this->change}?".$this->key_id."={$id}&&status={$status}'class='{$this->changestatus}'><span class='{$this->span}'></span>{$this->changetxt}</a>
 				</td>";
 			}
-			
-			
-			
+
+
+
 				$body.="</td>";
 			}
 			$html = "
@@ -235,8 +241,8 @@ class gridView{
     				        <td colspan='2' width='8%'><b><center>ผู้ใหญ่</b></center></td>
                             <td colspan='2' width='8%'><b><center>เด็ก</b></center></td>
                             <td colspan='2' width='8%'><b><center>ชาวต่างชาติ</b></center></td>
-                            
-    					</tr>";							
+
+    					</tr>";
 					}else if($this->special == 2){
     					$html .="
     					<tr>
@@ -255,7 +261,7 @@ class gridView{
     					<td colspan='2' width='8%'><b><center>ผู้ใหญ่</b></center></td>
     					<td colspan='2' width='8%'><b><center>เด็ก</b></center></td>
     					<td colspan='2' width='8%'><b><center>ชาวต่างชาติ</b></center></td>
-    					</tr>"; 
+    					</tr>";
                         }else if($this->special == 3){
                             $html .="
     					<tr>
@@ -278,7 +284,7 @@ class gridView{
 							<td rowspan='3' colspan='1' width='8%'style='padding: 25 8 0 8;'><b><center>โครงการทัวร์สวนสัตว์</b></center></td>
 							<td rowspan='2' colspan='2' width='8%' style='padding: 18 8 0 8;'><b><center><b><center>นักศึกษา/ครู/ทหาร/ตำรวจ</b></center></td>
 							<td rowspan='1' colspan='6' width='8%' style='padding: 18 8 0 8;'><b><center>นักท่องเที่ยวต่างชาติ</b></center></td>
-							
+
 							<td rowspan='2' colspan='2' width='8%' style='border-right-width:0px;'><b><center>ผู้เข้าชมไนท์ซาฟารี</b></center></td>
 							<td rowspan='3' width='6%' style='border-left-width:1px; padding: 80 16 0 16;'><b><center>เสียค่าบัตร</b></center></td>
 							<td rowspan='3' width='6%' style='padding: 65 8 0 8;'><b><center>ยกเว้น/หมู่คณะไม่เสียค่าบัตร</b></center></td>
@@ -287,7 +293,7 @@ class gridView{
     					<tr>
     					<td colspan='3' width='8%'><b><center>ผู้ใหญ่</b></center></td>
     					<td colspan='3' width='8%'><b><center>เด็ก</b></center></td>
-    					</tr>"; 
+    					</tr>";
                             }else if($this->special == 5){
     					$html .="
                         <tr>
@@ -297,7 +303,7 @@ class gridView{
 							<td rowspan='3' colspan='1' width='4%'style='padding: 25 8 0 8;'><b><center>โครงการทัวร์สวนสัตว์</b></center></td>
 							<td rowspan='2' colspan='2' width='8%' style='padding: 18 8 0 8;'><b><center><b><center>นักศึกษา/ครู/ทหาร/ตำรวจ</b></center></td>
 							<td rowspan='1' colspan='6' width='12%' style='padding: 18 8 0 8;'><b><center>นักท่องเที่ยวต่างชาติ</b></center></td>
-							
+
 							<td rowspan='2' colspan='2' width='12%' style='border-right-width:0px;'><b><center>ผู้เข้าชมไนท์ซาฟารี</b></center></td>
 							<td rowspan='3' width='8%' style='border-left-width:1px; padding: 80 16 0 16;'><b><center>เสียค่าบัตร</b></center></td>
 							<td rowspan='3' width='4%' style='padding: 65 8 0 8;'><b><center>ยกเว้น/หมู่คณะไม่เสียค่าบัตร</b></center></td>
@@ -307,8 +313,8 @@ class gridView{
     					<tr>
     					<td colspan='3' width='8%'><b><center>ผู้ใหญ่</b></center></td>
     					<td colspan='3' width='8%'><b><center>เด็ก</b></center></td>
-    					</tr>"; 
-    					} 
+    					</tr>";
+    					}
 						$html .="<tr>
 							{$header}
 						</tr>

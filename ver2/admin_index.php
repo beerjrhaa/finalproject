@@ -13,7 +13,8 @@
             include_once 'form/main_form.php';
             include_once 'form/gridview.php';
             include_once 'dbMysqli.php';
-            include_once 'database/database.php';
+			include_once 'database/database.php';
+			include_once 'php_image_magician.php';
         ?>
         <link rel="stylesheet" href="CSS/bootstrap.css">
 		<link rel="stylesheet" href="CSS/jquery.dataTables.css">

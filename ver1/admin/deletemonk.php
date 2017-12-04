@@ -8,8 +8,10 @@
 		$param[":id"]=$id;
 		$stmt->execute($param);
 
+		if($stmt){
 		echo "DELETE Monk_id=$id Success";
-		echo "<meta http-equiv='refresh' content='3; url=menmonk.php'>";
+		echo "<meta http-equiv='refresh' content='3; url=admin_index.php?url=admin_m_index.php'>";
+		}
 }
 ?>
 

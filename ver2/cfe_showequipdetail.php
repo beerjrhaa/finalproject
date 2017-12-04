@@ -2,7 +2,7 @@
 
 	$id = $_GET['equip_id'];
 	$sql = "SELECT * FROM equip_tb WHERE equip_id = :id";
- 		$stmt = $db->prepare($sql);
+ 		$stmt = $db2->prepare($sql);
  		$stmt->bindValue(':id',$_GET["equip_id"],PDO::PARAM_STR);
  		$stmt->execute();
  		$equip=$stmt->fetch();

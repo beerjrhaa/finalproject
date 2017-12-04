@@ -23,16 +23,17 @@
 
     $result = "SELECT * FROM his_tb";
 	$rs = mysqli_query($link, $result);
-       echo "<div class='col-md-12'>"."<h2>ตารางแสดงข้อมูลประวัติวัด</h2>".$rowend;
+         echo "<div class='col-md-12 mt-3'>".$row."<div class='col-md-6'>"."$row"."<h2>ตารางแสดงข้อมูลประวัติวัดสุคันธาราม</h2>".$rowend.$rowend."<div class='col-md-6 '>".$row."<div class='col-md-7'><a class='btn btn-success float-right ' type='button' href='admin_index.php?url=admin_hs_index.php&url2=admin_hsaddhis.php'>เพิ่มข้อมูล</a></div>".$rowend.$rowend.$rowend;
 
 			$grid = new gridView();
+			$grid->setKeyId('his_id');
 			$grid->pr = 'his_id';
 			$grid->header = array('<b><center>ลำดับที่</center></b>','<b><center>ชื่อหัวข้อ</center></b>','<b><center>รายละเอียดของหัวข้อ</center></b>','<b><center>วันที่เพิ่มข่าวสาร</center></b>','<b><center>#</center></b>','<b><center>#</center></b>');
 			$grid->width = array('5%','15%','30%','10%','5%','5%');
 			$grid->name = 'table';
-			$grid->delete = 'admin_index.php?url=admin_cf_index.php&url2=cf_status.php';
+			$grid->delete = 'admin_index.php?url=admin_hs_index.php&url2=admin_hs_delete.php';
 			$grid->deletetxt ='ลบ';
-			$grid->edit = 'admin_index.php?url=admin_cf_index.php&url2=cf_status.php';
+			$grid->edit = 'admin_index.php?url=admin_hs_index.php&url2=admin_hs_edit.php';
 			$grid->edittxt ='แก้ไข';
 
 			$grid->renderFromDB($columns,$rs);

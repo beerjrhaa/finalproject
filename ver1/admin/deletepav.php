@@ -7,9 +7,10 @@
 		$stmt=$db->prepare($sql);
 		$param[":id"]=$id;
 		$stmt->execute($param);
-
+		if($stmt){
 		echo "DELETE pav_id=$id Success";
-		echo "<meta http-equiv='refresh' content='3; url=menpav.php'>";
+		echo "<meta http-equiv='refresh' content='3; url=admin_index.php?url=admin_cf_index.php'>";
+		}
 }
 ?>
 

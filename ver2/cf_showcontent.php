@@ -1,6 +1,6 @@
 <?
-	$sql = "SELECT * FROM pav_tb ORDER BY pav_id LIMIT 5";
-		$stmt=$db->prepare($sql);
+	$sql = "SELECT * FROM pav_tb ORDER BY pav_id ";
+		$stmt=$db2->prepare($sql);
 		$stmt->execute();
 		$rows = $stmt->rowCount();
 

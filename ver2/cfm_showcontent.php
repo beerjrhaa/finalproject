@@ -1,6 +1,6 @@
 <?
 	$sql = "SELECT * FROM monk_tb ";
-		$stmt=$db->prepare($sql);
+		$stmt=$db2->prepare($sql);
 		$stmt->execute();
 		$rows = $stmt->rowCount();
 

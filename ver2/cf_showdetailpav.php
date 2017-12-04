@@ -2,7 +2,7 @@
 
 	$id = $_GET['pav_id'];
 	$sql = "SELECT * FROM pav_tb as p JOIN pavalbum_tb as pa ON p.pav_id = pa.pav_id WHERE p.pav_id = :id AND pa.pav_id =:id ";
- 		$stmt = $db->prepare($sql);
+ 		$stmt = $db2->prepare($sql);
  		$stmt->bindValue(':id',$_GET["pav_id"],PDO::PARAM_STR);
  		$stmt->execute();
  		$pav=$stmt->fetch();

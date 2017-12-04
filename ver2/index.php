@@ -17,8 +17,8 @@
               include_once 'connect.php';
               include_once 'form/main_form.php';
               include_once 'form/gridview.php';
-              include_once 'database/database.php';
-             ?>
+			  include_once 'database/database.php';
+			  ?>
     </head>
     <body>
         <div class="wrapper">
